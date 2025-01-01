@@ -9,7 +9,7 @@ import {
   Output
 } from "@angular/core";
 
-declare var jQuery: any;
+declare const jQuery: any;
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
