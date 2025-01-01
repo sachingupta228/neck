@@ -2,7 +2,7 @@ import {
   Directive, ViewContainerRef, Input, OnInit, Output, EventEmitter
 } from "@angular/core";
 
-declare var jQuery: any;
+declare const jQuery: any;
 
 /**
  * Implementation of Semantic UI Visibility
