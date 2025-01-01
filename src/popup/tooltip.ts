@@ -1,6 +1,6 @@
 import { Directive, ViewContainerRef, Input, OnInit } from "@angular/core";
 
-declare var jQuery: any;
+declare const jQuery: any;
 
 /**
  * Implementation of Semantic UI popup
