@@ -4,11 +4,11 @@
  */
 (function (global) {
     // map tells the System loader where to look for things
-    var paths = {
+    const paths = {
         'npm:': 'node_modules/'
     };
 
-    var map = {
+    const map = {
         'app': 'demo/app', // 'dist',
 
         // angular bundles
@@ -28,7 +28,7 @@
         'Prism': 'demo/vendor/prismjs'
     };
 
-    var packages = {
+    const packages = {
         app: {
             main: './bootstrap.js',
             defaultExtension: 'js'
@@ -50,7 +50,7 @@
         }
     };
 
-    var config = {
+    const config = {
         paths: paths,
         map: map,
         packages: packages
