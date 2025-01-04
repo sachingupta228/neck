@@ -14,7 +14,7 @@ import { Component, Input, ChangeDetectionStrategy, HostListener } from "@angula
 [ngClass]="{'active visible': show}" class="ui dropdown sm-contextmenu">
  <div 
  [ngClass]="{'visible animating slide down in': show, 'hidden': !show}"  class="ui menu transition">
- <a (click)="menu.action()" *ngFor="const menu of items" class="item">
+ <a (click)="menu.action()" *ngFor="let menu of items" class="item">
  <i class="{{menu.icon}} icon"></i>
  {{menu.title}}
  </a>
