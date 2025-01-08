@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, ViewChild, ElementRef, Input } from "@angular/core";
 
-declare let jQuery: any;
+declare const jQuery: any;
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
