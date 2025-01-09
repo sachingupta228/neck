@@ -3,7 +3,7 @@ import {
   AfterViewInit
 } from "@angular/core";
 
-declare let jQuery: any;
+declare const jQuery: any;
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
