@@ -24,7 +24,7 @@ export * from "./src/dimmer/dimmer";
 export * from "./src/transition/transition";
 export * from "./src/shape/shape";
 export * from "./src/accordion/accordion";
-export declare let SEMANTIC_COMPONENTS: Array<any>;
-export declare let SEMANTIC_DIRECTIVES: Array<any>;
+export declare const SEMANTIC_COMPONENTS: Array<any>;
+export declare const SEMANTIC_DIRECTIVES: Array<any>;
 export declare class NgSemanticModule {
 }
