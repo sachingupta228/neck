@@ -30,7 +30,7 @@ export class SemanticPopupComponent {
       this.visible = true;
       this.element = <Element>element.target;
 
-      let options: {} = Object.assign({
+      const options: {} = Object.assign({
         closable: true,
         exclusive: true,
         lastResort: true,
