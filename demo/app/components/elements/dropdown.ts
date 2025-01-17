@@ -13,12 +13,12 @@ import { Component } from "@angular/core";
 <div class="main ui container">
     <h4 class="ui header">Dropdown</h4>
 <sm-dropdown title="Cities" class="pointing floating labeled icon button" (onChange)="onChange($event)">
-    <sm-item *ngFor="let item of cities">{{item}}</sm-item>
+    <sm-item *ngFor="const item of cities">{{item}}</sm-item>
 </sm-dropdown>
 <h4 class="ui header">Code</h4>
 <sm-codeblock smPrismjs="html">
 &lt;sm-dropdown title="Cities" class="pointing floating labeled icon button">
-    &lt;sm-item *ngFor="let item of cities">{{'{'}}{{'{'}}item{{'}'}}{{'}'}}&lt;/sm-item>
+    &lt;sm-item *ngFor="const item of cities">{{'{'}}{{'{'}}item{{'}'}}{{'}'}}&lt;/sm-item>
 &lt;/sm-dropdown>
 </sm-codeblock>
 
@@ -31,7 +31,7 @@ import { Component } from "@angular/core";
 </sm-dropdown>
 <sm-codeblock smPrismjs="html">
 &lt;sm-dropdown class="pointing" icon="wrench">
-    &lt;sm-item *ngFor="let item of cities">{{'{'}}{{'{'}}item{{'}'}}{{'}'}}&lt;/sm-item>
+    &lt;sm-item *ngFor="const item of cities">{{'{'}}{{'{'}}item{{'}'}}{{'}'}}&lt;/sm-item>
 &lt;/sm-dropdown>
 </sm-codeblock>
 
@@ -86,7 +86,7 @@ import { Component } from "@angular/core";
 <sm-menu title="Angular2" class="inverted pink massive">
     <a sm-item href="#/elements/menu" icon="home">Home</a>
     <sm-dropdown class="pointing link" title="Cities" [options]="{on: 'hover'}">
-        <sm-item *ngFor="let item of cities">{{item}}</sm-item>
+        <sm-item *ngFor="const item of cities">{{item}}</sm-item>
     </sm-dropdown>
 </sm-menu>
 <h4 class="ui header">Code</h4>
@@ -94,7 +94,7 @@ import { Component } from "@angular/core";
 &lt;sm-menu title="Angular2" class="inverted pink massive">
     &lt;a sm-item href="#/elements/menu" icon="home">Home&lt;/a>
     &lt;sm-dropdown class="pointing link" title="Cities" [options]="{{ '{' }}on: 'hover'{{ '}' }}">
-        &lt;sm-item *ngFor="let item of cities">{{'{'}}{{'{'}}item{{'}'}}{{'}'}}&lt;/sm-item>
+        &lt;sm-item *ngFor="const item of cities">{{'{'}}{{'{'}}item{{'}'}}{{'}'}}&lt;/sm-item>
     &lt;/sm-dropdown>
 &lt;/sm-menu>
 </sm-codeblock>
@@ -103,7 +103,7 @@ import { Component } from "@angular/core";
 <sm-menu title="ngSemantic" class="vertical">
     <a sm-item href="#/elements/menu" icon="home">Home</a>
     <sm-dropdown class="left pointing link" title="Cities">
-        <sm-item *ngFor="let item of cities">{{item}}</sm-item>
+        <sm-item *ngFor="const item of cities">{{item}}</sm-item>
     </sm-dropdown>
     <a sm-item href="#/elements/accordion">Accordion</a>
     <a sm-item href="#/elements/sidebar">Sidebar</a>
@@ -112,7 +112,7 @@ import { Component } from "@angular/core";
 &lt;sm-menu title="ngSemantic" class="vertical">
     &lt;a sm-item href="#/elements/menu" icon="home">Home&lt;/a>
     &lt;sm-dropdown class="left pointing link" title="Cities">
-        &lt;sm-item *ngFor="let item of cities">{{ '{' }}{{ '{' }}item{{ '}' }}{{ '}' }}&lt;/sm-item>
+        &lt;sm-item *ngFor="const item of cities">{{ '{' }}{{ '{' }}item{{ '}' }}{{ '}' }}&lt;/sm-item>
     &lt;/sm-dropdown>
     &lt;a sm-item href="#/elements/accordion">Accordion&lt;/a>
     &lt;a sm-item href="#/elements/sidebar">Sidebar&lt;/a>
