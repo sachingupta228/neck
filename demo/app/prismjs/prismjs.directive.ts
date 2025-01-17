@@ -10,8 +10,8 @@ export class PrismJsDirective implements AfterViewInit {
     constructor(public viewContainer: ViewContainerRef) {}
 
     ngAfterViewInit(): any {
-        let html = Prism.highlight(this.viewContainer.element.nativeElement.innerText, Prism.languages[this.smPrismjs]);
-        let elClass = "language-" + this.smPrismjs;
+        const html = Prism.highlight(this.viewContainer.element.nativeElement.innerText, Prism.languages[this.smPrismjs]);
+        const elClass = "language-" + this.smPrismjs;
         this.viewContainer.element.nativeElement.innerHTML = `<pre class=${elClass}><code>${html}</code></pre>`;
     }
 
