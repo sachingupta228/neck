@@ -1,5 +1,5 @@
-let http = require('http');
-let fs = require('fs');
+const http = require('http');
+const fs = require('fs');
 
 http.createServer(function (req, res) {
   if(req.url.length < 2) {
