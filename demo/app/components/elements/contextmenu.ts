@@ -1,7 +1,7 @@
 import { Component, Type, Renderer, ElementRef, ViewChild, AfterViewInit } from "@angular/core";
 import { IContextMenu } from "../../services/contextmenu";
 
-declare const jQuery: any;
+declare let jQuery: any;
 
 @Component({
     selector: "sm-page-contextmenu",
