@@ -22,7 +22,7 @@ export class SemanticAccordionComponent implements AfterViewInit {
 
   ngAfterViewInit() {
 
-    let inAccordion: HTMLElement|boolean = this.inAccordion(this.accordion.nativeElement, "accordion");
+    const inAccordion: HTMLElement|boolean = this.inAccordion(this.accordion.nativeElement, "accordion");
 
     if (inAccordion) {
       this.accordion.nativeElement.classList.remove("ui");
