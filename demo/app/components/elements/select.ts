@@ -34,7 +34,7 @@ import { FormControl, Validators } from "@angular/forms";
     <div class="ui form">
     <sm-select [options]="{direction: 'upward', transition: 'vertical flip'}" [control]="multipleControl" placeholder="Select multiple..." 
     class="fluid search multiple" (onChange)="onMultiple($event)">
-        <option *ngFor="const city of cities">{{city}}</option>
+        <option *ngFor="let city of cities">{{city}}</option>
     </sm-select>
     </div>
     <p>Selected: {{multipleData | json}}</p>
@@ -46,7 +46,7 @@ import { FormControl, Validators } from "@angular/forms";
     placeholder="Select multiple..." 
     class="fluid search multiple"
     (onChange)="onMultiple($event)">
-    &lt;option *ngFor="const city of cities">{{'{'}}{{'{'}}city{{'}'}}{{'}'}}&lt;/option>
+    &lt;option *ngFor="let city of cities">{{'{'}}{{'{'}}city{{'}'}}{{'}'}}&lt;/option>
 &lt;/sm-select>
 </sm-codeblock>
 
@@ -105,7 +105,7 @@ import { FormControl, Validators } from "@angular/forms";
     [options]="{direction: 'upward'}"
     [(model)]="selection" placeholder="Select gender..."
     class="fluid">
-        <option *ngFor="const item of ('https://jsonplaceholder.typicode.com/users' | smFetch)" [value]="item?.name">
+        <option *ngFor="let item of ('https://jsonplaceholder.typicode.com/users' | smFetch)" [value]="item?.name">
         <i class="icon female"></i> {{item?.name}}</option>
     </sm-select>
 {{selection}}
