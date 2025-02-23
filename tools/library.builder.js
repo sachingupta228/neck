@@ -1,9 +1,9 @@
-const path = require('path');
-const Builder = require('systemjs-builder');
-const bundleName = name = "ng-semantic";
+let path = require('path');
+let Builder = require('systemjs-builder');
+let bundleName = name = "ng-semantic";
 
-const builder = new Builder();
-const config = {
+let builder = new Builder();
+let config = {
   baseURL: './',
   transpiler: 'typescript',
   typescriptOptions: {
