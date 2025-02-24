@@ -56,7 +56,7 @@ export * from "./src/transition/transition";
 export * from "./src/shape/shape";
 export * from "./src/accordion/accordion";
 
-export let SEMANTIC_COMPONENTS: Array<any> = [
+export const SEMANTIC_COMPONENTS: Array<any> = [
  SemanticCardComponent,
  SemanticCardsComponent,
  SemanticContextMenuComponent,
@@ -88,7 +88,7 @@ export let SEMANTIC_COMPONENTS: Array<any> = [
  SemanticRatingComponent
 ];
 
-export let SEMANTIC_DIRECTIVES: Array<any> = [
+export const SEMANTIC_DIRECTIVES: Array<any> = [
  SMTooltipDirective,
  SMVisibilityDirective,
  SMDeviceVisibilityDirective,
