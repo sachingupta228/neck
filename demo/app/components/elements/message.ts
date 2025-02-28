@@ -36,7 +36,7 @@ import { MessageService } from "../../services/message";
     <div class="ui horizontal section icon divider"><i class="icon setting"></i></div>
     <h4 class="ui header">Demo</h4>
     <p>Once created, message will expire for 5 seconds.</p>
-    <sm-message *ngFor="let message of messages" class="{{message?.type}}" [icon]="message?.icon">
+    <sm-message *ngFor="const message of messages" class="{{message?.type}}" [icon]="message?.icon">
         <message-header>
             {{message?.text}} header
         </message-header>
@@ -63,7 +63,7 @@ import { MessageService } from "../../services/message";
 
     <h4 class="ui header">Code</h4>
 <sm-codeblock smPrismjs="html">
-&lt;sm-message *ngFor="let message of messages" class="{{message?.type}}" [icon]="message.icon">
+&lt;sm-message *ngFor="const message of messages" class="{{message?.type}}" [icon]="message.icon">
     &lt;message-header>
         {{'{'}}{{'{'}}message?.text{{'}'}}{{'}'}} header
     &lt;/message-header>
