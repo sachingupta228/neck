@@ -7,11 +7,11 @@ declare var jQuery: any;
 // because a of lot of shadow dom elements, we must create this fixSidebar
 // function, to move elements to proper location before sidebar run.
 jQuery.fn.fixSidebar = function () {
-  const allModules = jQuery(this);
+  let allModules = jQuery(this);
 
   allModules
     .each(function () {
-      const
+      let
         selector = { pusher: ".pusher" },
         module = jQuery(this),
         context = jQuery("body");
