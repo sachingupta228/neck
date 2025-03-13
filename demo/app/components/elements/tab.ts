@@ -47,14 +47,14 @@ import { Component } from "@angular/core";
     <div class="ui horizontal section icon divider"><i class="icon setting"></i></div>
         <h4 class="ui header">Demo dynamic add</h4>
     <sm-tabs>
-          <sm-tab *ngFor="let a of [{title: 'Hello', active: false}, {title: 'About', active: true}]" 
+          <sm-tab *ngFor="const a of [{title: 'Hello', active: false}, {title: 'About', active: true}]" 
           [title]="a.title" [active]="a.active" >{{a.title}} | additional text.
 </sm-tab>
       </sm-tabs>
 <h4 class="ui header">Code</h4>
     <sm-codeblock smPrismjs="html">
 &lt;sm-tabs>
-    &lt;sm-tab *ngFor="let a of [{{ '{' }}title: 'Hello', active: false{{ '}' }}, {{ '{' }}title: 'About', active: true{{ '}' }}]"
+    &lt;sm-tab *ngFor="const a of [{{ '{' }}title: 'Hello', active: false{{ '}' }}, {{ '{' }}title: 'About', active: true{{ '}' }}]"
     [title]="a.title" [active]="a.active" >{{ '{' }}{{ '{' }}a.title{{ '}' }}{{ '}' }} | additional text.
     &lt;/sm-tab>
 &lt;/sm-tabs>
