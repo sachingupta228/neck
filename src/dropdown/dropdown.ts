@@ -29,7 +29,7 @@ export class SemanticDropdownComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    const options: {} = Object.assign({
+    let options: {} = Object.assign({
       onChange: (value: string|number, a: string|number, b: Array<HTMLElement>) => {
         if (b != null && b.length) {
           this.onChange.emit(b[0].innerText);
