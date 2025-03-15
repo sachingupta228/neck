@@ -55,7 +55,7 @@ export class SemanticSelectComponent implements AfterViewInit {
       this.select.nativeElement.setAttribute("multiple", true);
     }
 
-    const options: {} = Object.assign({
+    let options: {} = Object.assign({
       onChange: (value: string|number) => {
         this.modelChange.emit(value);
         this.onChange.emit(value);
