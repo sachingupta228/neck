@@ -28,7 +28,7 @@ import { SearchComponent } from "./components/elements/search";
 import { DeviceVisibilityComponent } from "./components/elements/devicevisibility";
 import { ShapeComponent } from "./components/elements/shape";
 
-let routes: Routes = [
+const routes: Routes = [
     { component: HomeComponent, path: "" },
     { component: ButtonComponent, path: "elements/button" },
     { component: FlagComponent, path: "elements/flag" },
@@ -58,4 +58,4 @@ let routes: Routes = [
     { component: DeviceVisibilityComponent, path: "elements/devicevisibility" }
 ];
 
-export let routing = RouterModule.forRoot(routes, { useHash: true });
+export const routing = RouterModule.forRoot(routes, { useHash: true });
