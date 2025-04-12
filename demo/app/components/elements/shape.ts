@@ -30,7 +30,7 @@ import { Component } from "@angular/core";
     
     <h4 class="ui header dividing">Events:</h4>
     <sm-list>
-        <sm-item *ngFor="let event of events">{{event}}</sm-item>
+        <sm-item *ngFor="const event of events">{{event}}</sm-item>
     </sm-list>
     
     <h4 class="ui header">Code</h4>
