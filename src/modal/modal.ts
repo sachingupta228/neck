@@ -51,7 +51,7 @@ export class SemanticModalComponent implements OnDestroy {
   }
 
   ngOnDestroy(): void {
-    let parent = this.modal.nativeElement.parentElement;
+    const parent = this.modal.nativeElement.parentElement;
     parent.removeChild(this.modal.nativeElement);
   }
 }
