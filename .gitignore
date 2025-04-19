@@ -1,0 +1,7 @@
+node_modules
+src/**/*.js
+/ng-semantic.js
+.idea
+demo/app/**/*.js
+npm-debug.log
+bundles
